@@ -1,1 +1,2 @@
 MONGODB_HOST: mongodb.erumamadu.online
+REDIS_HOST: redis.erumamadu.online
