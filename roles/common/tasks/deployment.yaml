@@ -49,3 +49,10 @@
   ansible.builtin.service:
     name: "{{component}}"
     state: restarted
+
+
+    # stop the service
+    # remove old code
+    # download the latest code
+    # restart the server
+
