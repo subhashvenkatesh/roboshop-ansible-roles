@@ -50,7 +50,7 @@
     name: "{{component}}"
     state: restarted
 
-
+ # New Deployment
     # stop the service
     # remove old code
     # download the latest code
