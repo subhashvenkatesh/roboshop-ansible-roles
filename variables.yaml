@@ -1,3 +1,10 @@
 MONGODB_HOST: mongodb.erumamadu.online
 REDIS_HOST: redis.erumamadu.online
+CATALOGUE_HOST: catalogue.erumamadu.online
+CART_HOST: cart.erumamadu.online
 USER_HOST: user.erumamadu.online
+SHIPPING_HOST: shipping.erumamadu.online
+PAYMENT_HOST: payment.erumamadu.online
+MYSQL_HOST: mysql.erumamadu.online
+DISPATCH_HOST: dispatch.erumamadu.online
+RABBITMQ_HOST: rabbitmq.erumamadu.online
