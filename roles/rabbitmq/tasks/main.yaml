@@ -1,0 +1,22 @@
+- name: Configure yum erlang server
+  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
+
+- name: Configure yum rabbitmq server
+  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | bash
+
+- name: Install rabbitmq-server
+  ansible.builtin.package:
+    name: rabbitmq-server
+    state: present
+
+- name: Enable and Start service
+  ansible.builtin.service:
+    name: rabbitmq-server
+    state: started
+    enabled: yes
+
+- name: Create rabbitmq user
+  ansible.builtin.command: rabbitmqctl add_user roboshop roboshop123
+
+- name: Set permissions
+  ansible.builtin.command: rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
